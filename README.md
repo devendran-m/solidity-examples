@@ -16,6 +16,8 @@ A comprehensive collection of Solidity code examples and practice contracts desi
     - [3. ArrayStruct.sol](#3-arraystructsol)
     - [4. DataLocation.sol](#4-datalocationsol)
     - [5. Mapping.sol](#5-mappingsol)
+    - [6. MyToken.sol](#6-mytokensol)
+    - [7. MyOZToken.sol](#7-myoztokensol)
   - [🛠️ Development Environment](#️-development-environment)
   - [🔮 Future Development](#-future-development)
   - [📖 Learning Path](#-learning-path)
@@ -130,6 +132,44 @@ Key-value storage patterns:
 - Data relationship management
 ```
 
+### 6. MyToken.sol
+**Concepts Covered:** ERC20 tokens, interfaces, token standards, events
+
+Complete ERC20 token implementation from scratch:
+- **IERC20 Interface:** Standard token interface definition
+- **Token Economics:** Total supply, decimals, and token metadata
+- **Transfer Logic:** Direct transfers and allowance-based transfers
+- **Events:** Transfer and Approval event emissions
+- **Security:** Basic checks for sufficient balance and allowance
+
+```solidity
+// Key features:
+- Full ERC20 token standard implementation
+- Interface-based design pattern
+- Mapping for balances and allowances
+- Event emission for transparency
+- Basic security validations
+```
+
+### 7. MyOZToken.sol
+**Concepts Covered:** External dependencies, OpenZeppelin integration, inheritance
+
+OpenZeppelin-based token implementation (commented example):
+- **External Libraries:** Using battle-tested OpenZeppelin contracts
+- **Inheritance:** Extending ERC20 base contract
+- **Constructor Patterns:** Token initialization with name and symbol
+- **Minting Logic:** Initial token distribution
+- **Import Management:** Working with external contract dependencies
+
+```solidity
+// Key features:
+- OpenZeppelin ERC20 inheritance pattern
+- Simplified token creation
+- Professional-grade security (when uncommented)
+- Industry-standard implementation
+- Dependency management concepts
+```
+
 ## 🛠️ Development Environment
 
 Currently, these examples are designed to run on:
@@ -160,9 +200,10 @@ This is a foundational collection with plans for expansion:
   - Reentrancy protection
 
 - [ ] **DeFi Patterns**
-  - Token standards (ERC-20, ERC-721)
+  - Advanced token features (ERC-721, ERC-1155)
   - DEX functionality
   - Yield farming basics
+  - Staking mechanisms
 
 - [ ] **Development Tooling**
   - Migration scripts
@@ -178,6 +219,8 @@ For optimal learning, we recommend following this sequence:
 3. **ArrayStruct.sol** - Work with complex data types
 4. **DataLocation.sol** - Master memory management
 5. **Mapping.sol** - Implement efficient data lookups
+6. **MyToken.sol** - Build complete ERC20 token from scratch
+7. **MyOZToken.sol** - Learn professional patterns with OpenZeppelin
 
 ## 🤝 Contributing
 
